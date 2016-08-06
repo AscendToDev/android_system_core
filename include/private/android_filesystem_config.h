@@ -78,7 +78,6 @@
 #define AID_SDCARD_AV     1034  /* external storage audio/video access */
 #define AID_SDCARD_ALL    1035  /* access all users external storage */
 #define AID_LOGD          1036  /* log daemon */
-#define AID_SHARED_RELRO  1037  /* creator of shared GNU RELRO files */
 #define AID_DBUS          1038  /* dbus-daemon IPC broker process */
 #define AID_TLSDATE       1039  /* tlsdate unprivileged user */
 #define AID_MEDIA_EX      1040  /* mediaextractor process */
@@ -191,7 +190,6 @@ static const struct android_id_info android_ids[] = {
     { "sdcard_av",     AID_SDCARD_AV, },
     { "sdcard_all",    AID_SDCARD_ALL, },
     { "logd",          AID_LOGD, },
-    { "shared_relro",  AID_SHARED_RELRO, },
     { "dbus",          AID_DBUS, },
     { "tlsdate",       AID_TLSDATE, },
     { "mediaex",       AID_MEDIA_EX, },
