@@ -547,7 +547,7 @@ void Service::Restart() {
 }
 
 void Service::RestartIfNeeded(time_t& process_needs_restart) {
-    time_t next_start_time = time_started_ + 5;
+    time_t next_start_time = time_started_ + 10;
 
     if (next_start_time <= gettime()) {
         flags_ &= (~SVC_RESTARTING);
