@@ -85,7 +85,7 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_MODULE := libutils
 LOCAL_CLANG := true
-LOCAL_SANITIZE := integer
+LOCAL_SANITIZE := integer,object-size
 LOCAL_C_INCLUDES += external/safe-iop/include
 include $(BUILD_STATIC_LIBRARY)
 
@@ -103,7 +103,7 @@ LOCAL_CFLAGS := -Werror
 LOCAL_C_INCLUDES += external/safe-iop/include
 
 LOCAL_CLANG := true
-LOCAL_SANITIZE := integer
+LOCAL_SANITIZE := integer,object-size
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
