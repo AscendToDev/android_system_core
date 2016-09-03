@@ -127,7 +127,7 @@ LOCAL_CFLAGS += -DUSE_SCHEDBOOST
 endif
 LOCAL_CFLAGS += -Werror -Wall -Wextra -std=gnu90
 LOCAL_CLANG := true
-LOCAL_SANITIZE := integer
+LOCAL_SANITIZE := integer,object-size
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -145,7 +145,7 @@ endif
 LOCAL_CFLAGS += -Werror -Wall -Wextra
 LOCAL_C_INCLUDES := $(libcutils_c_includes)
 LOCAL_CLANG := true
-LOCAL_SANITIZE := integer
+LOCAL_SANITIZE := integer,object-size
 include $(BUILD_SHARED_LIBRARY)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
