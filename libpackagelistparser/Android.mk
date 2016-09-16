@@ -11,7 +11,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 
 LOCAL_CLANG := true
-LOCAL_SANITIZE := integer
+LOCAL_SANITIZE := integer,object-size
 
 include $(BUILD_SHARED_LIBRARY)
 
@@ -27,6 +27,6 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 
 LOCAL_CLANG := true
-LOCAL_SANITIZE := integer
+LOCAL_SANITIZE := integer,object-size
 
 include $(BUILD_STATIC_LIBRARY)
