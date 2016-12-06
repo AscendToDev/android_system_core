@@ -1443,6 +1443,7 @@ static int handle_releasedir(struct fuse* fuse, struct fuse_handler* handler,
     return 0;
 }
 
+__attribute__((no_sanitize("all")))
 static int handle_init(struct fuse* fuse, struct fuse_handler* handler,
         const struct fuse_in_header* hdr, const struct fuse_init_in* req)
 {
